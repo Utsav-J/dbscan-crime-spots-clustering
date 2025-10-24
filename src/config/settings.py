@@ -51,6 +51,71 @@ CUSTOM_CSS = """
         border-radius: 0.5rem;
         margin: 0.5rem 0;
     }
+    
+    /* Sidebar styling */
+    section[data-testid="stSidebar"] > div {
+        padding-top: 2rem;
+    }
+    
+    /* Make sidebar content larger and easier to interact with */
+    section[data-testid="stSidebar"] .element-container {
+        margin-bottom: 0.5rem;
+    }
+    
+    /* Style the buttons to be modern and bigger */
+    .stButton > button {
+        width: 100%;
+        height: 3.5rem;
+        border-radius: 0.75rem;
+        font-size: 1.1rem;
+        font-weight: 500;
+        border: 2px solid rgba(128, 128, 128, 0.2);
+        transition: all 0.3s ease;
+        text-align: left;
+        padding-left: 1.25rem;
+        background: rgba(128, 128, 128, 0.1);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin-bottom: 0.5rem;
+    }
+    
+    .stButton > button:hover {
+        border-color: #FF4B4B;
+        background: rgba(255, 75, 75, 0.15);
+        box-shadow: 0 4px 8px rgba(255,75,75,0.3);
+        transform: translateX(4px);
+    }
+    
+    /* Active button style */
+    .stButton > button[kind="primary"] {
+        background: linear-gradient(90deg, #FF4B4B 0%, #ff6b6b 100%);
+        color: white !important;
+        border-color: #FF4B4B;
+        box-shadow: 0 4px 12px rgba(255,75,75,0.4);
+        font-weight: 600;
+    }
+    
+    .stButton > button[kind="primary"]:hover {
+        background: linear-gradient(90deg, #ff3838 0%, #ff5555 100%);
+        transform: translateX(4px);
+        box-shadow: 0 4px 16px rgba(255,75,75,0.5);
+    }
+    
+    /* Sidebar title styling */
+    section[data-testid="stSidebar"] h1 {
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 3px solid #FF4B4B;
+    }
+    
+    /* Sidebar divider */
+    section[data-testid="stSidebar"] hr {
+        margin: 1.5rem 0;
+        border: none;
+        height: 2px;
+        background: linear-gradient(90deg, transparent 0%, #FF4B4B 50%, transparent 100%);
+    }
     </style>
 """
 
