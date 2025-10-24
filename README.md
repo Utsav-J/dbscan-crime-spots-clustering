@@ -92,6 +92,43 @@ The application will open in your default web browser at `http://localhost:8501`
 - **Recommendations**: Actionable suggestions
 - **Technical Summary**: Algorithm performance details
 
+## 📁 Project Structure
+
+```
+dbscan_crime_spots/
+├── main.py                          # Application entry point
+├── src/
+│   ├── config/
+│   │   ├── __init__.py
+│   │   └── settings.py              # Configuration and constants
+│   ├── data/
+│   │   ├── __init__.py
+│   │   ├── loader.py                # Data loading utilities
+│   │   └── processor.py             # Data processing and transformation
+│   ├── models/
+│   │   ├── __init__.py
+│   │   └── dbscan_model.py          # DBSCAN clustering implementation
+│   ├── pages/
+│   │   ├── __init__.py
+│   │   ├── home.py                  # Home page
+│   │   ├── theory.py                # DBSCAN theory page
+│   │   ├── dataset_overview.py     # Dataset exploration
+│   │   ├── data_visualization.py   # Scatter plots and maps
+│   │   ├── dbscan_clustering.py    # Interactive clustering
+│   │   ├── interactive_maps.py     # Map visualizations
+│   │   ├── heat_maps.py            # Heat map analysis
+│   │   └── summary.py              # Summary and insights
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   └── ui_helpers.py           # UI helper functions
+│   └── visualization/
+│       ├── __init__.py
+│       ├── plots.py                # Matplotlib/Seaborn plots
+│       └── maps.py                 # Folium map creation
+├── pyproject.toml                  # Project dependencies
+└── README.md                       # This file
+```
+
 ## 🛠️ Technology Stack
 
 - **Streamlit**: Interactive web application framework
@@ -101,6 +138,17 @@ The application will open in your default web browser at `http://localhost:8501`
 - **Matplotlib & Seaborn**: Statistical visualizations
 - **Folium**: Interactive maps
 - **Streamlit-Folium**: Folium integration with Streamlit
+
+## 🎨 Code Organization
+
+The codebase follows a modular architecture with clear separation of concerns:
+
+- **config/**: Application settings and constants
+- **data/**: Data loading and processing logic
+- **models/**: Machine learning models (DBSCAN)
+- **pages/**: Individual Streamlit page components
+- **utils/**: Utility functions and helpers
+- **visualization/**: Plotting and mapping functions
 
 ## 📖 Usage Tips
 
