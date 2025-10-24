@@ -1,6 +1,8 @@
 # 🚨 DBSCAN Crime Spots Analysis
 
 An interactive Streamlit application for analyzing San Francisco crime data using the DBSCAN (Density-Based Spatial Clustering of Applications with Noise) algorithm.
+## DEMO VIDEO
+[streamlit-main-2025-10-24-11-10-16.webm](https://github.com/user-attachments/assets/fcd50f5d-fde8-4e9c-a6bb-d1f8458c5bca)
 
 ## 📋 Overview
 
